@@ -1,8 +1,8 @@
 // Populate dropdown menu with all the available genres
 const populateGenreDropdown = (genres) => {
-    const select = document.getElementById('genres')
+    const select = document.getElementById('genres');
 
-    for (const genre of genres) {
+    for (const genre of genres.genres) {
         let option = document.createElement("option");
         option.value = genre.id;
         option.text = genre.name;
